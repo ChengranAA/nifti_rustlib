@@ -1,0 +1,21 @@
+# niftilib/Cargo.toml
+
+[package]
+name = "niftilib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "niftilib"
+path = "src/lib.rs"
+crate-type = ["lib"]
+
+[[bin]]
+name = "nifti1_test"
+path = "src/nifti1_test.rs"
+
+[[bin]]
+name = "nifti1_tool"
+path = "src/nifti1_tools.rs"
+
+[dependencies]
