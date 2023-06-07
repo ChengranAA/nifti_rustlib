@@ -1,12 +1,11 @@
 [package]
-name = "nifti2"
+name = "znzlib"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "nifti2"
+name = "znzlib"
 path = "src/lib.rs"
 crate-type = ["lib"]
-
 
 [dependencies]

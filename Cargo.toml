@@ -1,16 +1,20 @@
 [package]
 authors = ["Chengran Li"]
-descriptino = "Rust NIFTI library"
+description = "Rust NIFTI library"
 readme = "README.md"
 name = "nifti_rslib"
-version = "0.0.1"
+version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "main_test"
+path = "src/main_test.rs"
+
 [workspace]
 members = [
     "nifti2",
     "niftilib",
+    "znzlib",
 ]
 
 [lib]
@@ -18,5 +22,6 @@ name = "nifti_rslib"
 path = "src/lib.rs"
 
 [dependencies]
-niftilib = { path = "./niftilib" }
-nifti2 = { path = "./nifti2" }
+niftilib = { path = "niftilib" }
+nifti2 = { path = "nifti2" }
+znzlib = { path = "znzlib" }
