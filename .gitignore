@@ -2,4 +2,4 @@
 /test_data
 .TODOLIST.tsv
 Cargo.lock
-/nifti-test-data-master
+/nifti-test-data
